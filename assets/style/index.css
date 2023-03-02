@@ -67,6 +67,9 @@ section h3 {
     translate: 0 0;
   }
 }
+/*-------------------------------------------------------*/
+/* About Me                                              */
+/*-------------------------------------------------------*/
 .about {
   width: 100%;
   height: 480px;
@@ -177,6 +180,9 @@ li p{
     margin-left: 0px;
   }
 }
+/*-------------------------------------------------------*/
+/* Contact Me                                            */
+/*-------------------------------------------------------*/
 .contact {
   margin-top: 60px;
 }
@@ -215,6 +221,7 @@ form input + input, form textarea{
 }
 .buttons{
   text-align: center;
+  margin-bottom: 50px;
 }
 input[type=reset], input[type=submit]{
   font-size: 14px;
@@ -240,53 +247,6 @@ input[type=reset]:hover{
 input[type=submit]:hover{
   background-color: #0007ff;
 }
-[data-animation-offset]{
-  animation: trans 1s ease-in;
-}
-[data-animation-offset=form]{
-  animation-delay: 0s;
-}
-@keyframes trans{
-  from{
-    opacity: 0; 
-    translate: 0 -10px;
-  }to{
-    opacity: 1; 
-    translate: 0 0;
-  }
-}
-.button{
-  width: 100%;
-  height: 150px;
-  display: grid;
-  place-items: center;
-}
-div input{
-  height: 45px;
-  padding: 0 15px;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: all 0.25s ease-in-out;
-}
-input[type=button]{
-  font-size: 14px;
-  padding: 0 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-input[type=button]{
-  margin-left: 12px;
-  color: white;
-  background-color: #007fff;
-}
-input[type=button]:hover{
-  background-color: #0007ff;
-}
-.bounce{
-  animation: bounce 5s ease-in-out infinite;
-  animation-delay: 2s;
-}
 @keyframes bounce{
   0%, 50%, 100%{translate: 0 0;}
   25%, 75%{translate: 0 -15px;}
@@ -300,33 +260,119 @@ input[type=button]:hover{
   }
 }
 /*-------------------------------------------------------*/
+/* Animation                                             */
+/*-------------------------------------------------------*/
+.click {
+  width: 500px;
+  height: 500px;
+  background: #f9f9f9;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.red {
+  width: 420px;
+  height: 100px;
+  background: #d35400;
+  position: relative;
+  left: 400px;
+  transition: transform 1.8s ease-in-out;
+}
+.red-expand {
+  transform: translateX(-840px);
+}
+.green {
+  width: 100px;
+  height: 420px;
+  position: relative;
+  top: -420px;
+  background: #2ecc71;
+  transition: transform 1.8s ease-in-out;
+}
+.green-expand {
+  transform: translateY(840px);
+}
+.yellow {
+  width: 420px;
+  height: 100px;
+  background: #f1c40f;
+  position: relative;
+  top: -120px;
+  left: -320px;
+  transition: transform 1.8s ease-in-out;
+}
+.yellow-expand {
+  transform: translateX(840px);
+}
+.blue {
+  width: 100px;
+  height: 420px;
+  background: #3498db;
+  position: relative;
+  top: -220px;
+  left: 400px;
+  transition: transform 1.8s ease-in-out;
+}
+.blue-expand {
+  transform: translateY(-840px);
+}
+.text {
+  width: 280px;
+  height: 280px;
+  border: 2px solid #999;
+  border-radius: 5px;
+  position: relative;
+  top: -930px;
+  left: 110px;
+  text-align: center;
+  line-height: 2;
+}
+hr {
+  width: 70%;
+}
+.click-btn {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 15px;
+  border: none;
+  background-color: #007fff;;
+  color: #fff;
+  margin: 20px;
+  margin-top: 80px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #dedede;
+  transition: all 0.25s ease-in-out
+}
+.click-btn:hover{
+  background-color: #0007ff;
+}
+@media(max-width: 580px){
+  .click {
+    display: none;
+  }
+}
+/*-------------------------------------------------------*/
 /* Footer                                                */
 /*-------------------------------------------------------*/
 footer {
   min-width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: #000;
 }
 footer div div{
   width: 300px;
 }
 footer div div i {
-  height: 80px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  align-items: center;
   color: #f0f2f4;
   font-size: 30px;
-  padding: 25px 0px;
+  margin-top: 20px;
 }
 footer div p {
-  margin-top: 20px;
   color: #f0f2f4;
-  float: right;
   font-size: 24px;
   font-weight: 600;
-  margin-left: 575px;
-}
-@media(max-width: 1024px){
-  .footer {
-    display: none;
-  }
 }
