@@ -17,9 +17,24 @@
   <body class="body">
     <header>
       <div class="container flex">
-        <div>
-          <h1>My Website</h1>
+        <div class="title">
+          <h1>My Webpage</h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="icon">
+          <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button> 
+        </div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a href="#">About me</a>
+          <a href="#">Contact me</a>
+        </div>
+      </div>
     </header>
     <main>
       <section class="image">
@@ -52,7 +67,7 @@
             </div>
             <div class="information column">
               <div>
-                <ul class="flex">
+                <ul class="flex list">
                   <li class="flex">
                     <i class="fa-solid fa-location-dot"></i>
                     <p>Location: Winnipeg, MB</p>

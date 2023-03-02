@@ -12,3 +12,13 @@ anim.addEventListener('click', function() {
   document.querySelector('.yellow').classList.toggle('yellow-expand');
   document.querySelector('.blue').classList.toggle('blue-expand');
 })
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
