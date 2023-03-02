@@ -40,37 +40,31 @@ header .title h1 {
 main {
   height: auto;
 }
-section{
+section {
   /* background: lightgray url("../image/earth.jpg") center center / cover no-repeat; */
-  background: lightgray center center / cover no-repeat;
-  background-image: 
-    linear-gradient(to bottom, 
-    rgba(211,211,211,0), 
-    rgba(211,211,211,0), 
-    rgba(211,211,211,0.66666), 
-    rgba(211,211,211,1)), 
-    url("../image/Hello\,\ world.jpg");
+  background: #000 center center / cover no-repeat;
+  background-image: url("../image/Hello\,\ world.jpg");
   height: 100vh;
   text-align: center;
   overflow: hidden;
 }
-section h2{
+section h2 {
   margin-top: 180px;
   color: #f0f2f4;
   font-size: 60px;
 }
-section h3{
+section h3 {
   margin-top: 50px;
   color: #f0f2f4;
   font-size: 30px;
 }
-[data-animation-offset]{
+[data-animation-offset] {
   animation: trans 2s ease-in;
 }
-[data-animation-offset=title]{
+[data-animation-offset=title] {
   animation-delay: 0s;
 }
-@keyframes trans{
+@keyframes trans {
   from{
     opacity: 0; 
     translate: 0 -10px;
@@ -78,6 +72,49 @@ section h3{
     opacity: 1; 
     translate: 0 0;
   }
+}
+.about {
+  width: 100%;
+  height: 480px;
+  background-color: rgb(38, 38, 38);
+  color: #f0f2f4;
+}
+img {
+  margin-top: 60px;
+  width: 240px;
+  height: 190px;
+  border-radius: 30px;
+}
+.column {
+  flex-direction: column;
+}
+.introduce {
+  margin-top: 60px;
+  margin-left: 16px;
+  width: 768px;
+}
+.information {
+  margin-top: 30px;
+  margin-left: 16px;
+  width: 768px;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 18px;
+}
+li + li{
+  margin-left: 20px;
+}
+.location {
+  margin-left: 40px;
+}
+.nationality {
+  margin-left: 40px;
+}
+.study {
+  margin-left: 40px;
 }
 /*-------------------------------------------------------*/
 /* Footer                                                */
