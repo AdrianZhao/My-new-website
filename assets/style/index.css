@@ -12,5 +12,91 @@ html {
   margin-inline: auto;
 }
 /*-------------------------------------------------------*/
+/* Header                                                */
+/*-------------------------------------------------------*/
+header {
+  background-color: #000;
+}
+.flex {
+  display: flex;
+}
+header .title h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #f0f2f4;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+}
+@media(min-width: 768px) {
+  .icon{display: none;}
+}
+@media(max-width: 768px) {
+  header nav ul li{display: none;}
+}
+/*-------------------------------------------------------*/
 /* Main                                                  */
 /*-------------------------------------------------------*/
+main {
+  height: auto;
+}
+section{
+  /* background: lightgray url("../image/earth.jpg") center center / cover no-repeat; */
+  background: lightgray center center / cover no-repeat;
+  background-image: 
+    linear-gradient(to bottom, 
+    rgba(211,211,211,0), 
+    rgba(211,211,211,0), 
+    rgba(211,211,211,0.66666), 
+    rgba(211,211,211,1)), 
+    url("../image/Hello\,\ world.jpg");
+  height: 50vh;
+  text-align: center;
+  overflow: hidden;
+}
+section h2{
+  margin-top: 180px;
+  color: #f0f2f4;
+  font-size: 60px;
+}
+[data-animation-offset]{
+  animation: trans 2s ease-in;
+}
+[data-animation-offset=title]{
+  animation-delay: 0s;
+}
+@keyframes trans{
+  from{
+    opacity: 0; 
+    translate: 0 -10px;
+  }to{
+    opacity: 1; 
+    translate: 0 0;
+  }
+}
+/*-------------------------------------------------------*/
+/* Footer                                                */
+/*-------------------------------------------------------*/
+footer {
+  min-width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+footer div {
+  width: 300px;
+}
+footer div div i {
+  height: 80px;
+  width: 60px;
+  color: #f0f2f4;
+  font-size: 30px;
+  padding: 25px 0px;
+}
+footer div p {
+  margin-top: 20px;
+  color: #f0f2f4;
+  float: right;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 575px;
+}
