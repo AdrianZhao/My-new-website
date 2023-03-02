@@ -50,7 +50,7 @@ section{
     rgba(211,211,211,0.66666), 
     rgba(211,211,211,1)), 
     url("../image/Hello\,\ world.jpg");
-  height: 50vh;
+  height: 100vh;
   text-align: center;
   overflow: hidden;
 }
@@ -58,6 +58,11 @@ section h2{
   margin-top: 180px;
   color: #f0f2f4;
   font-size: 60px;
+}
+section h3{
+  margin-top: 50px;
+  color: #f0f2f4;
+  font-size: 30px;
 }
 [data-animation-offset]{
   animation: trans 2s ease-in;
