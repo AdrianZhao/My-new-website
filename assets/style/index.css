@@ -322,10 +322,6 @@ input[type=reset]:hover{
 input[type=submit]:hover{
   background-color: #0007ff;
 }
-@keyframes bounce{
-  0%, 50%, 100%{translate: 0 0;}
-  25%, 75%{translate: 0 -15px;}
-}
 @media(max-width: 450px){
   .buttons{
     margin-top: 10px;
